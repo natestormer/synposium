@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="synposium">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Framework | Home</title>
+		<link href="/css/app.css" media="all" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="/js/vendor/angular/angular-1.2.8.min.js"></script>
+		<script type="text/javascript" src="/js/vendor/angular/angular-route-1.2.8.min.js"></script>
+		<script type="text/javascript" src="/js/controllers/appController.js"></script>
+	</head>
+
+	<body>
+		<header class="framework-header" role="header" ng-controller="headerController">
+			<div class="layout--max-width">
+				<div class="header-bar">
+					<h1 class="header-bar__branding">Framework</h1>
+					<a class="header-bar__nav-trigger" ng-click="showNav=!showNav">Nav <span class="fa fa-bars"></span></a>
+				</div>
+			</div>
+
+			<nav class="framework-nav" role="navigation" ng-show="showNav">
+				<h1>Framework Documentation</h1>
+
+				<div class="framework-nav__section">
+					<h2 class="framework-nav__section-title ng-class:{current:isCurrent('/')}">Overview</h2>
+					<ul class="framework-nav__section-list">
+					<li class="framework-nav__section-list-item"><a href="#/" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Overview</a></li>
+						<li class="framework-nav__section-list-item"><a href="#/front-end-coding-standards" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Front-end Coding Standards</a></li>
+						<li class="framework-nav__section-list-item"><a href="#/syn-mixins" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Syn Mixins</a></li>
+					</ul>
+				</div>
+
+				<div class="framework-nav__section">
+					<h2 class="framework-nav__section-title">Structural Components</h2>
+					<ul class="framework-nav__section-list">
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Media Queries</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Visibility</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Grid</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Block Grid</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Interchange Content <span class="dependency--js">JS</span></a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Thumbnails</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Utility Classes</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Right-to-left Support</a></li>
+					</ul>
+				</div>
+
+				<div class="framework-nav__section">
+					<h2 class="framework-nav__section-title">Navigation</h2>
+					<ul class="framework-nav__section-list">
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Off Canvas <span class="dependency--js">JS</span></a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Top Bar <span class="dependency--js">JS</span></a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Side Nav</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Sub Nav</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Breadcrumbs</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Pagination</a></li>
+					</ul>
+				</div>
+
+				<div class="framework-nav__section">
+					<h2 class="framework-nav__section-title">Media</h2>
+					<ul class="framework-nav__section-list">
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Modal <span class="dependency--js">JS</span></a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Clearing Lightbox <span class="dependency--js">JS</span></a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Flex Video <span class="dependency--js">JS</span></a></li>
+					</ul>
+				</div>
+
+				<div class="framework-nav__section">
+					<h2 class="framework-nav__section-title">Forms</h2>
+					<ul class="framework-nav__section-list">
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Form Layouts</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Form Elements</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Datepicker <span class="dependency--js">JS</span></a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Form Validation</a></li>
+					</ul>
+				</div>
+
+				<div class="framework-nav__section">
+					<h2 class="framework-nav__section-title">Buttons</h2>
+					<ul class="framework-nav__section-list">
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Buttons</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Button Groups</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Split Buttons <span class="dependency--js">JS</span></a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Dropdown Buttons <span class="dependency--js">JS</span></a></li>
+					</ul>
+				</div>
+
+				<div class="framework-nav__section">
+					<h2 class="framework-nav__section-title">Typography</h2>
+					<ul class="framework-nav__section-list">
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Type</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Inline Lists</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Labels</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Icon Fonts</a></li>
+					</ul>
+				</div>
+
+				<div class="framework-nav__section">
+					<h2 class="framework-nav__section-title">Callouts &amp; Prompts</h2>
+					<ul class="framework-nav__section-list">
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Alerts</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Panels</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Tooltips</a></li>
+					</ul>
+				</div>
+
+				<div class="framework-nav__section">
+					<h2 class="framework-nav__section-title">Content Types</h2>
+					<ul class="framework-nav__section-list">
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Dropdowns</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Tables</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Pricing Tables</a></li>
+						<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link" ng-click="showNav=!showNav">Progress Bars</a></li>
+					</ul>
+				</div>
+
+			</nav>
+
+		</header>
+
+		<section class="main layout--max-width" role="main" ng-view></section>
+
+		<footer role="contentinfo">
+
+		</footer>
+	</body>
+</html>

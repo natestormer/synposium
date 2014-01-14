@@ -1,0 +1,27 @@
+// slidedown nav
+
+// <nav class="framework-nav" role="navigation">
+// 		<h1>Framework Documentation</h1>
+
+// 		<div class="framework-nav__section">
+// 			<h2 class="framework-nav__section-title">Overview</h2>
+// 			<ul class="framework-nav__section-list">
+// 			<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link">Overview</a></li>
+// 				<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link">Front-end Coding Standards</a></li>
+// 				<li class="framework-nav__section-list-item"><a href="#" class="framework-nav__section-list-link">Syn Mixins</a></li>
+// 			</ul>
+// 		</div>
+// </nav>
+
+.framework-nav {
+	padding: rem-calc(40);
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	background: $white;
+	background: rgba($white, .9);
+}

@@ -1,0 +1,49 @@
+// *******************************************
+// *******************************************
+
+	// Header area for framework
+
+// *******************************************
+// *******************************************
+
+.framework-header {
+	padding-top  :  rem-calc(40); // offset header nav
+}
+
+// Header Bar
+
+// <div class="header-bar">
+// 	<h1 class="header-bar__branding">Framework</h1>
+// 	<a href="#" class="header-bar__nav-trigger">Nav <span class="fa fa-bars"></span></a>
+// </div>
+
+.header-bar {
+	padding     :  rem-calc(16 40);
+	position    :  fixed;
+	top         :  0;
+	right       :  0;
+	left        :  0;
+	z-index     :  2;
+	color       :  $white;
+	background  :  $themeDDGray;
+
+	@include clearfix();
+
+	.header-bar__branding {
+		margin       :  0;
+		display      :  inline-block;
+		float        :  left;
+		font-size    :  rem-calc(16);
+		line-height  :  rem-calc(16);
+		font-weight  :  bold;
+		color        :  $white;
+	}
+
+	.header-bar__nav-trigger {
+		display      :  inline-block;
+		float        :  right;
+		font-size    :  rem-calc(16);
+		line-height  :  rem-calc(16);
+	}
+
+}
