@@ -9,7 +9,9 @@ function frameworkRouter($routeProvider)
 	$routeProvider
 		.when('/', {templateUrl: 'partials/home.html'})
 		.when('/front-end-coding-standards', {templateUrl: 'partials/coding-standards.html'})
-		.when('/syn-mixins', {templateUrl: 'partials/syn-mixins.html'});
+		.when('/syn-mixins', {templateUrl: 'partials/syn-mixins.html'})
+		.when('/buttons/buttons', {templateUrl: 'partials/buttons.html'})
+		;
 }
 
 // Navigation toggle
