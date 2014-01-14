@@ -15,7 +15,8 @@
 
 .framework-nav {
 	padding           :   rem-calc(80 40);
-	overflow          :   auto;
+	overflow-x        :   hidden;
+	overflow-y        :   auto;
 	position          :   fixed;
 	top               :   0;
 	right             :   0;
@@ -110,8 +111,8 @@
 // section nav list item
 
 .framework-nav__section-list-item {
-	border-top: 1px solid $themeLLGray;
-	border-bottom: 1px solid $white;
+	border-top     :  1px solid $themeLLGray;
+	border-bottom  :  1px solid $white;
 
 	&:first-child {
 		border-top  :  none;
@@ -125,10 +126,10 @@
 // section nav link
 
 .framework-nav__section-list-link {
-	padding: rem-calc(3 6);
-	display: block;
-	font-size: rem-calc(13);
-	border-left: 5px solid transparent;
+	padding      :  rem-calc(3 6);
+	display      :  block;
+	font-size    :  rem-calc(13);
+	border-left  :  5px solid transparent;
 
 	@include transition( background-color .3s ease-in-out, border-color .3s ease-in-out );
 
@@ -136,4 +137,16 @@
 		background-color   :   $white;
 		border-left-color  :   $themeTurquoise;
 	}
+
+	// dependency tags
+
+	.dependency--js {
+		margin         :  rem-calc(0 3);
+		padding        :  rem-calc(3 6);
+		display        :  inline-block;
+		font-size      :  rem-calc(10);
+		background     :  $themeLLGray;
+		border-radius  :  3px;
+	}
+
 }
