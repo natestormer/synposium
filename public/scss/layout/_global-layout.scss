@@ -2,6 +2,6 @@
 // set global max width and center
 
 .layout--max-width {
-	width  :  rem-calc(1120);
-	margin :  auto;
+	max-width  :  rem-calc(1120);
+	margin     :  auto;
 }

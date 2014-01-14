@@ -7,7 +7,7 @@
 // *******************************************
 
 .framework-header {
-	padding-top  :  rem-calc(40); // offset header nav
+	padding-top  :  rem-calc(46); // offset header nav
 }
 
 // Header Bar
@@ -18,16 +18,23 @@
 // </div>
 
 .header-bar {
-	padding     :  rem-calc(16 40);
-	position    :  fixed;
-	top         :  0;
-	right       :  0;
-	left        :  0;
-	z-index     :  2;
-	color       :  $white;
-	background  :  $themeDDGray;
+	margin           :  rem-calc(-5 -5 0 -5);
+	padding          :  rem-calc(20 20 15);
+	position         :  fixed;
+	top              :  0;
+	right            :  0;
+	left             :  0;
+	z-index          :  2;
+	color            :  $white;
+	background-color :  $themeBlue;
+	border-bottom    :  1px solid rgba($white, .25);
+	box-shadow       :  inset 2px 0px 5px -2px $black;
 
 	@include clearfix();
+
+	@media #{$large-up} {
+		padding          :  rem-calc(20 50 15);
+	}
 
 	.header-bar__branding {
 		margin       :  0;
@@ -44,6 +51,7 @@
 		float        :  right;
 		font-size    :  rem-calc(16);
 		line-height  :  rem-calc(16);
+		color        :  $white;
 	}
 
 }
