@@ -1,0 +1,21 @@
+.syn-home-sections {
+	padding   :   rem-calc(48 0);
+
+	h1 {
+		@extend .ff-source-bold;
+
+		font-size  :  rem-calc(30);
+		color      :  $themeMGray;
+	}
+
+	p {
+		@extend .ff-source;
+
+		color  :  $themeDGray;
+	}
+
+}
+
+.syn-home-sections__section {
+	padding   :   rem-calc(0 21);
+}

@@ -6108,10 +6108,10 @@ th.hide-for-touch {
 .ff-source-light, .syn-toggle-nav, input[type="text"].syn-search__keywords, .syn-search__filters__title, .syn-nav-sections__item, .syn-nav-toc__section__title, .syn-hero__title {
   font-family: 'source_sans_prolight', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
-.ff-source, .syn-search__filters__list-item, .syn-nav-toc__section__list-item-link, .syn-hero__callout {
+.ff-source, .syn-search__filters__list-item, .syn-nav-toc__section__list-item-link, .syn-hero__callout, .syn-home-sections p {
   font-family: 'source_sans_proregular', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
-.ff-source-bold, .syn-branding {
+.ff-source-bold, .syn-branding, .syn-home-sections h1 {
   font-family: 'source_sans_prosemibold', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
 .syn-html, .syn-body {
@@ -6680,3 +6680,14 @@ button.syn-search__button {
   line-height: 6.1875rem; }
   .roundicon--xlarge .roundicon__icon {
     font-size: 4.375rem; }
+
+.syn-home-sections {
+  padding: 3rem 0; }
+  .syn-home-sections h1 {
+    font-size: 1.875rem;
+    color: #73767d; }
+  .syn-home-sections p {
+    color: #494d4e; }
+
+.syn-home-sections__section {
+  padding: 0 1.3125rem; }
