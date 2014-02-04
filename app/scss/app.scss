@@ -1,0 +1,46 @@
+// vendor imports
+
+	// foundation
+
+	@import "normalize";
+	@import "settings";
+	@import "foundation";
+
+	// bourbon
+
+	@import "bourbon";
+
+	// fontawesome
+
+	$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts"; // for referencing Bootstrap CDN font files directly
+	@import "font-awesome";
+
+// dependencies
+
+	@import "dependencies/colors";
+
+// layout
+
+	@import "layout/layout-global";
+
+// regions
+
+// components
+
+	// typography
+
+	@import "synposium/syn-typography";
+
+// page and section specific imports
+
+	// synposium
+
+	@import "synposium/syn-fonts";
+	@import "synposium/syn-layout";
+	@import "synposium/syn-header";
+	@import "synposium/syn-footer";
+	@import "synposium/syn-app-content";
+	@import "synposium/syn-nav";
+	@import "synposium/syn-hero";
+	@import "synposium/syn-breadcrumbs";
+	@import "synposium/syn-icons";

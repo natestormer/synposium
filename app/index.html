@@ -1,0 +1,312 @@
+<!doctype html>
+<!--[if IE 9]>    <html class="no-js lt-ie10 syn-html" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js syn-html" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Foundation project</title>
+
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/app_override.css">
+		<!-- build:js js/vendor/modernizr.js -->
+		<script src="bower_components/modernizr/modernizr.js"></script>
+		<!-- endbuild -->
+	</head>
+	<body class="syn-body">
+
+		<div class="syn-app" role="application">
+			<header class="syn-app__header" role="banner">
+				<div class="syn-layout--max-width">
+					<h1 class="syn-branding">
+						<a class="syn-branding__link" href="#">
+							Synposium
+						</a>
+					</h1>
+					<a class="syn-toggle-nav syn-toggle-nav--is-inactive js-trigger-nav" href="#">
+						<span class="syn-toggle-nav__lable">Menu</span>
+						<span class="syn-toggle-nav__icon">
+							<span class="syn-toggle-nav__icon--default fa fa-bars"></span>
+							<span class="syn-toggle-nav__icon--close fa fa-times"></span>
+						</span>
+					</a>
+				</div>
+			</header>
+
+			<nav class="syn-nav syn-nav--is-inactive syn-nav--field-is-inactive js-nav" role="navigation">
+
+				<div class="syn-layout--max-width">
+
+					<form class="syn-search syn-search--is-inactive js-search" role="search">
+
+						<div class="row collapse">
+							<div class="small-10 columns">
+								<input class="syn-search__keywords js-kewords" type="text" placeholder="Search Synposium" />
+							</div>
+							<div class="small-2 columns">
+								<button class="syn-search__button js-clear-keywords">
+									<span class="syn-search__submit-default">
+										<span class="fa fa-search"></span>
+									</span>
+									<span class="syn-search__submit-clear">
+										<span class="fa fa-times"></span>
+									</span>
+								</button>
+							</div>
+						</div>
+
+						<div class="syn-search__filters">
+							<strong class="syn-search__filters__title">Quick Results</strong>
+							<ul class="syn-search__filters__list">
+								<li class="syn-search__filters__list-item"><a href="#">Result</a></li>
+							</ul>
+						</div>
+					</form>
+
+					<ul class="syn-nav-sections">
+						<li class="syn-nav-sections__item">
+							<a class="syn-nav-sections__link" href="#">
+								<span class="label-icon">
+									<span class="label-icon__label">Fn</span>
+								</span>
+								Foundation
+							</a>
+						</li>
+						<li class="syn-nav-sections__item">
+							<a class="syn-nav-sections__link" href="#">
+								<span class="label-icon">
+									<span class="label-icon__label">Bo</span>
+								</span>
+								Bourbon
+							</a>
+						</li>
+						<li class="syn-nav-sections__item">
+							<a class="syn-nav-sections__link" href="#">
+								<span class="label-icon">
+									<span class="label-icon__label">Re</span>
+								</span>
+								React Components
+							</a>
+						</li>
+					</ul>
+
+					<div class="syn-nav-toc">
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-home"></span>
+								</span>
+								Overview
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Front-end Coding Standards</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">File Structure</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Bower</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Grunt</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Syn Mixins</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-th-list"></span>
+								</span>
+								Structural Components
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Media Queries</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Visibility</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Grid</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Block Grid</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Interchange Content</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Thumbnails</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Utility Classes</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">RTL Support</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-compass"></span>
+								</span>
+								Navigation
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Off Canvas</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Top Bar</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Side Nav</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Sub Nav</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Pill Nav</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Breadcrumbs</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Pagination</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-picture-o"></span>
+								</span>
+								Media
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Modals</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Clearing Lightbox</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Flex Video</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-tasks"></span>
+								</span>
+								Forms
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Form Layouts</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Form Elements</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Datepicker</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Timepicker</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Field Validation</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Form Validation</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-link"></span>
+								</span>
+								Buttons
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Buttons</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Button Groups</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Split Buttons</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Dropdown Buttons</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-text-height"></span>
+								</span>
+								Typography
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Type</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Inline Lists</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Labels</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Icon Fonts</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-text-height"></span>
+								</span>
+								Callouts &amp; Prompts
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Alerts</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Panels</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Tooltips</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-align-right"></span>
+								</span>
+								Content Types
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Dropdowns</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Tables</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Pricing Tables</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Progress Bars</a></li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+
+			</nav>
+
+			<section class="syn-app__content syn-nav--is-inactive js-content" role="main">
+				<div class="syn-hero syn-hero--large">
+					<div class="syn-layout--max-width">
+						<h1 class="syn-hero__title">Welcome to Synposium <span class="fa fa-long-arrow-right"></span></h1>
+						<p class="syn-hero__callout">A front-end architecture for modern web-base application design and iteration. Synposium is built upon SASS, Bourbon and Foundation using BEM and SMACSS.</p>
+					</div>
+					<div class="syn-hero__orbs">
+						<div class="syn-hero__orbs-1"></div>
+						<div class="syn-hero__orbs-2"></div>
+						<div class="syn-hero__orbs-3"></div>
+					</div>
+				</div>
+				<div class="syn-breadcrumbs">
+					<div class="syn-layout--max-width">
+						<a class="syn-breadcrumb syn-breadcrumb--current" href="#">Home</a>
+					</div>
+				</div>
+				<div class="syn-home-sections syn-layout--max-width">
+					<div class="row collapse">
+						<div class="medium-4 columns">
+							<div class="syn-home-sections__section">
+								<div class="roundicon roundicon--xlarge">
+									<span class="roundicon__icon fa fa-code"></span>
+								</div>
+								<h1>Coding Standards</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla nisl, vestibulum eget placerat porttitor, iaculis mattis tortor. Mauris urna nisi, laoreet ut</p>
+								<a class="button button--primary" href="#">More</a>
+							</div>
+						</div>
+						<div class="medium-4 columns">
+							<div class="syn-home-sections__section">
+								<div class="roundicon roundicon--xlarge">
+									<span class="roundicon__icon fa fa-laptop"></span>
+								</div>
+								<h1>UI Components</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla nisl, vestibulum eget placerat porttitor, iaculis mattis tortor. Mauris urna nisi, laoreet ut</p>
+								<a class="button button--secondary" href="#">More</a>
+							</div>
+						</div>
+						<div class="medium-4 columns">
+							<div class="syn-home-sections__section">
+								<div class="roundicon roundicon--xlarge">
+									<span class="roundicon__icon fa fa-th-large"></span>
+								</div>
+								<h1>Kitchen Sink</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla nisl, vestibulum eget placerat porttitor, iaculis mattis tortor. Mauris urna nisi, laoreet ut</p>
+								<a class="button button--tertiary" href="#">More</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- /end .syn-home-sections -->
+			</section>
+
+			<footer class="syn-app__footer" role="contentinfo">
+				<div class="syn-layout--max-width">
+					<h1 class="syn-footer-legal">A product of Synapse Studios</h1>
+				</div>
+			</footer>
+		</div><!-- /end .app -->
+
+		<!-- build:js js/vendor/jquery.min.js -->
+		<script src="bower_components/jquery/jquery.min.js"></script>
+		<!-- endbuild -->
+		<!-- build:js js/foundation/foundation.min.js -->
+		<script src="bower_components/foundation/js/foundation.min.js"></script>
+		<!-- endbuild -->
+		<script src="js/app.js"></script>
+
+	</body>
+</html>

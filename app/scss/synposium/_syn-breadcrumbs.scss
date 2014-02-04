@@ -1,0 +1,10 @@
+.syn-breadcrumbs {
+	margin      :   rem-calc(-19 0 0);
+	padding     :   rem-calc(21 0);
+	background  :   $themeLLGray;
+}
+
+.syn-breadcrumb {
+	@extend .ff-lato;
+	color   :  $themeMGray;
+}

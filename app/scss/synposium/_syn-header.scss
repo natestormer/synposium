@@ -1,0 +1,101 @@
+.syn-app__header {
+	height         :  rem-calc(60);
+	position       :  fixed;
+	top            :  0;
+	right          :  0;
+	left           :  0;
+	z-index        :  2;
+	line-height    :  rem-calc(60);
+	border-bottom  :  1px solid rgba($white, .25);
+
+	@include clearfix;
+}
+
+.syn-branding {
+	@extend .ff-source-bold;
+
+	margin       :  0;
+	padding      :  0;
+	display      :  inline-block;
+	float        :  left;
+	font-size    :  rem-calc(15);
+	line-height  :  rem-calc(60);
+
+	&:after {
+		content     :  " ";
+		position    :  absolute;
+		right       :  0;
+		bottom      :  0;
+		left        :  0;
+		border-top  :  1px solid rgba($black, .15);
+	}
+
+}
+
+.syn-branding__link {
+	color  :  $white;
+}
+
+// trigger for main menu
+
+.syn-toggle-nav {
+	@extend .ff-source-light;
+
+	margin-top      :  rem-calc(5);
+	float           :  right;
+	text-transform  :  uppercase;
+	display         :  inline-block;
+	color           :  $white;
+
+	&:hover,
+	&:focus {
+		color  :   $white;
+	}
+
+	// menu text
+
+	.syn-toggle-nav__lable {
+		display      :  inline-block;
+		float        :  left;
+		line-height  :  rem-calc(48);
+	}
+
+	// icon container
+
+	.syn-toggle-nav__icon {
+		width        :  rem-calc(48);
+		height       :  rem-calc(48);
+		overflow     :  hidden;
+		display      :  inline-block;
+		float        :  right;
+		text-align   :  center;
+
+		.syn-toggle-nav__icon--default,
+		.syn-toggle-nav__icon--close {
+			width        :  rem-calc(48);
+			height       :  rem-calc(48);
+			display      :  block;
+			line-height  :  rem-calc(48);
+
+			@include transition( margin .2s $ease-in-out-quint .3s );
+		}
+
+	}
+
+	&.syn-toggle-nav--is-inactive {
+
+		.syn-toggle-nav__icon .syn-toggle-nav__icon--default {
+			margin   :  rem-calc(0);
+		}
+
+	}
+
+	&.syn-toggle-nav--is-active {
+
+		.syn-toggle-nav__icon .syn-toggle-nav__icon--default {
+			margin-top   :  rem-calc(-48);
+		}
+
+	}
+
+}

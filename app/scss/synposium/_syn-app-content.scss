@@ -1,0 +1,11 @@
+.syn-app__content {
+
+	&.syn-nav--is-inactive {
+		-webkit-filter  :  blur(0px);
+	}
+
+	&.syn-nav--is-active {
+		-webkit-filter  :  blur(3px);
+	}
+
+}

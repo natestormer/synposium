@@ -1,0 +1,13 @@
+.syn-app__footer {
+
+}
+
+.syn-footer-legal {
+	@extend .ff-lato;
+
+	margin      :  0;
+	padding     :  rem-calc(10);
+	font-size   :  rem-calc(12);
+	color       :  $themeMGray;
+	border-top  :  1px solid $themeLGray;
+}

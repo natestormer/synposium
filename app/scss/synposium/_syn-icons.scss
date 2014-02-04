@@ -1,0 +1,25 @@
+// icons surrounded in circle
+
+// <div class="roundicon">
+// 	<span class="roundicon__icon fa fa-code"></span>
+// </div>
+
+.roundicon {
+	width          :  rem-calc(27);
+	height         :  rem-calc(27);
+	display        :  inline-block;
+	text-align     :  center;
+	line-height    :  rem-calc(27);
+	color          :  $themeMGray;
+	background     :  $themeLLGray;
+	border-radius  :  50%;
+}
+
+// extra large
+// <div class="roundicon roundicon--xlarge">
+
+.roundicon--xlarge {
+	width        :  rem-calc(99);
+	height       :  rem-calc(99);
+	line-height  :  rem-calc(99);
+}
