@@ -6111,7 +6111,7 @@ th.hide-for-touch {
 .ff-source, .syn-search__filters__list-item, .syn-nav-toc__section__list-item-link, .syn-hero__callout, .syn-home-sections p {
   font-family: 'source_sans_proregular', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
-.ff-source-bold, .syn-branding, .syn-button, .syn-home-sections h1 {
+.ff-source-bold, .syn-branding, .label-icon__label, .syn-button, .syn-home-sections h1 {
   font-family: 'source_sans_prosemibold', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
 .syn-html, .syn-body {
@@ -6389,6 +6389,9 @@ button.syn-search__button {
   color: white; }
   .syn-nav-sections__link:hover {
     color: white; }
+  .syn-nav-sections__link .label-icon {
+    position: relative;
+    top: 0.125rem; }
 
 .syn-nav-toc {
   padding: 1.3125rem 0;
@@ -6436,6 +6439,7 @@ button.syn-search__button {
   padding: 0 0.9375rem;
   display: block;
   color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   border-left: 5px solid transparent;
   -webkit-transition: background 0.3s ease, border-color 0.3s ease;
   -moz-transition: background 0.3s ease, border-color 0.3s ease;
@@ -6694,6 +6698,20 @@ button.syn-search__button {
   line-height: 6.1875rem; }
   .roundicon--xlarge .roundicon__icon {
     font-size: 4.375rem; }
+
+.label-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0.125rem;
+  display: inline-block;
+  font-size: 0.9375rem;
+  line-height: 2.25rem;
+  color: #73767d;
+  background: #d0d3dc;
+  border-radius: 3px; }
+
+.label-icon__label {
+  font-size: 1.125rem; }
 
 .syn-button {
   min-width: 11.25rem;

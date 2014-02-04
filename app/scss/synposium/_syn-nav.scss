@@ -230,6 +230,11 @@ button.syn-search__button {
 		color  :  $white;
 	}
 
+	.label-icon {
+		position  :  relative;
+		top       :  rem-calc(2);
+	}
+
 }
 
 // table of contents navigation
@@ -289,10 +294,11 @@ button.syn-search__button {
 .syn-nav-toc__section__list-item-link {
 	@extend .ff-source;
 
-	padding: rem-calc(0 15);
-	display: block;
-	color  :  $white;
-	border-left: 5px solid transparent;
+	padding      :  rem-calc(0 15);
+	display      :  block;
+	color        :  $white;
+	text-shadow  :  1px 1px 1px rgba($black, .5);
+	border-left  :  5px solid transparent;
 
 	@include transition( background .3s ease, border-color .3s ease );
 
