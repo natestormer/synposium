@@ -55,7 +55,7 @@
 
 .syn-search {
 	width                :  rem-calc(350);
-	margin               :  rem-calc(48) auto;
+	margin               :  rem-calc(48) auto rem-calc(27);
 	position             :  relative;
 	background           :  rgba($black, .25);
 	border-radius        :  3px;
@@ -235,7 +235,7 @@ button.syn-search__button {
 // table of contents navigation
 
 .syn-nav-toc {
-	padding  :  rem-calc(48 0);
+	padding  :  rem-calc(21 0);
 	@include columns(3 rem-calc(20) );
 }
 
@@ -247,10 +247,12 @@ button.syn-search__button {
 .syn-nav-toc__section__title {
 	@extend .ff-source-light;
 
+	padding         :  rem-calc(6 0);
 	position        :  relative;
 	text-transform  :  uppercase;
 	font-size       :  rem-calc(18);
 	color           :  $white;
+	text-shadow     :  1px 1px 1px rgba($black, .5);
 	border-bottom   :  1px solid rgba($black, .25);
 
 	&:before {
@@ -261,6 +263,21 @@ button.syn-search__button {
 		bottom         :  0;
 		left           :  0;
 		border-bottom  :  1px solid rgba($white, .1);
+	}
+}
+
+.syn-nav-toc__section__title__icon {
+	width          :  rem-calc(25);
+	height         :  rem-calc(25);
+	display        :  inline-block;
+	text-align     :  center;
+	line-height    :  rem-calc(25);
+	border-radius  :  50%;
+	background     :  rgba($black, .1);
+	box-shadow     :  inset 1px 1px 3px rgba($black, .5);
+
+	> span {
+		font-size  :   rem-calc(14);
 	}
 }
 
