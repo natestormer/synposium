@@ -3,7 +3,8 @@ $saturatedPrimary  :  saturate($primary, 40%);
 
 .syn-hero {
 	margin            :  0;
-	padding          :  rem-calc(81 0 21 0);
+	padding           :  rem-calc(81 0 21 0);
+	overflow          :  hidden;
 	position          :  relative;
 	color             :  $white;
 	background-color  :  $primary;

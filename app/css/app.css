@@ -6434,6 +6434,7 @@ button.syn-search__button {
 .syn-hero {
   margin: 0;
   padding: 5.0625rem 0 1.3125rem 0;
+  overflow: hidden;
   position: relative;
   color: white;
   background-color: #2798d4;
