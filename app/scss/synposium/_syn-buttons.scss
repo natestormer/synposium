@@ -1,0 +1,38 @@
+.syn-button {
+	@extend .ff-source-bold;
+
+	min-width         :  rem-calc(180);
+	text-shadow       :  -1px -1px 1px rgba($black, .25);
+	border-radius     :  2px;
+	background-color  :  $primary;
+	border            :  1px solid $primary;
+	box-shadow        :  inset 0px 0px 1px rgba($white, .5);
+
+	@include linear-gradient( rgba($white, .1), rgba($white, 0), $fallback: $primary );
+
+	&:hover {
+		background-color  :  tint($primary, 15%);
+	}
+
+
+	&.button--secondary {
+		background-color  :  $secondary;
+		border-color      :  $secondary;
+
+		&:hover {
+			background-color  :  tint($secondary, 10%);
+		}
+
+	}
+
+	&.button--tertiary {
+		background-color  :  $tertiary;
+		border-color      :  $tertiary;
+
+		&:hover {
+			background-color  :  tint($tertiary, 10%);
+		}
+
+	}
+
+}

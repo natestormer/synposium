@@ -6111,7 +6111,7 @@ th.hide-for-touch {
 .ff-source, .syn-search__filters__list-item, .syn-nav-toc__section__list-item-link, .syn-hero__callout, .syn-home-sections p {
   font-family: 'source_sans_proregular', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
-.ff-source-bold, .syn-branding, .syn-home-sections h1 {
+.ff-source-bold, .syn-branding, .syn-button, .syn-home-sections h1 {
   font-family: 'source_sans_prosemibold', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
 .syn-html, .syn-body {
@@ -6680,6 +6680,30 @@ button.syn-search__button {
   line-height: 6.1875rem; }
   .roundicon--xlarge .roundicon__icon {
     font-size: 4.375rem; }
+
+.syn-button {
+  min-width: 11.25rem;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  background-color: #2798d4;
+  border: 1px solid #2798d4;
+  box-shadow: inset 0px 0px 1px rgba(255, 255, 255, 0.5);
+  background-color: #2798d4;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.1)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient( rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); }
+  .syn-button:hover {
+    background-color: #47a7da; }
+  .syn-button.button--secondary {
+    background-color: #e46849;
+    border-color: #e46849; }
+    .syn-button.button--secondary:hover {
+      background-color: #e6775b; }
+  .syn-button.button--tertiary {
+    background-color: #55c4dd;
+    border-color: #55c4dd; }
+    .syn-button.button--tertiary:hover {
+      background-color: #66c9e0; }
 
 .syn-home-sections {
   padding: 3rem 0; }
