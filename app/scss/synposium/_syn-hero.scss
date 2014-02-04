@@ -2,9 +2,8 @@
 $saturatedPrimary  :  saturate($primary, 40%);
 
 .syn-hero {
-	min-height        :  rem-calc(400);
 	margin            :  0;
-	padding-top       :  rem-calc(60);
+	padding          :  rem-calc(81 0 21 0);
 	position          :  relative;
 	color             :  $white;
 	background-color  :  $primary;
@@ -30,10 +29,22 @@ $saturatedPrimary  :  saturate($primary, 40%);
 
 }
 
+// sizes
+
+.syn-hero--large {
+	min-height      :  rem-calc(400);
+	padding          :  rem-calc(60 0 0 0);
+
+	.syn-hero__title {
+		margin     :   rem-calc(80 0 0);
+	}
+
+}
+
 .syn-hero__title {
 	@extend .ff-source-light;
 
-	margin     :   rem-calc(80 0 0);
+	margin     :   0;
 	font-size  :   rem-calc(48);
 	color      :   $white;
 

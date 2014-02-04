@@ -99,6 +99,50 @@ var app = (function() {
 				keywords.value = '';
 				e.preventDefault();
 			});
+		},
+
+		headerScroll: function()
+		{
+			var header = document.querySelectorAll('.js-app-header')[0];
+
+			var scrollPosition = pageYOffset,
+				prevScrollPosition = 0;
+
+			window.onscroll = function(e) {
+
+				// get direction of scroll
+
+				var scrollDirection,
+					scrollPosition = pageYOffset;
+
+				if ( scrollPosition > prevScrollPosition ) {
+					scrollDirection = 'down';
+				} else {
+					scrollDirection = 'up';
+				}
+
+				if ( scrollDirection === 'up' ) {
+					header.classList.add('syn-app__header--no-transition');
+				} else {
+					header.classList.add('syn-app__header--transition');
+				}
+
+				// set class based on scroll position and direction
+
+				prevScrollPosition = scrollPosition;
+
+				if (scrollPosition > 60) {
+					header.classList.add('syn-app__header--scroll');
+					header.classList.remove('syn-app__header--default');
+					header.style.top = scrollPosition + 'px';
+				} else {
+					header.classList.add('syn-app__header--default');
+					header.classList.remove('syn-app__header--scroll');
+					header.style.top = '0px';
+				}
+
+			}
+
 		}
 
 	};
@@ -116,5 +160,6 @@ var app = (function() {
 	app.userAgentInit();
 	app.navigation();
 	app.searchForm();
+	app.headerScroll();
 
 })();

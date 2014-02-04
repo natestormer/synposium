@@ -7,12 +7,21 @@
 .roundicon {
 	width          :  rem-calc(27);
 	height         :  rem-calc(27);
+	position       :  relative;
 	display        :  inline-block;
 	text-align     :  center;
 	line-height    :  rem-calc(27);
 	color          :  $themeMGray;
 	background     :  $themeLLGray;
 	border-radius  :  50%;
+
+	.roundicon__icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		@include transform( translate( -50%, -50% ) );
+	}
 }
 
 // extra large
@@ -22,4 +31,9 @@
 	width        :  rem-calc(99);
 	height       :  rem-calc(99);
 	line-height  :  rem-calc(99);
+
+	.roundicon__icon {
+		font-size : rem-calc(70);
+	}
+
 }

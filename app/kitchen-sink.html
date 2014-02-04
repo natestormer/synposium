@@ -1,0 +1,841 @@
+<!doctype html>
+<!--[if IE 9]>    <html class="no-js lt-ie10 syn-html" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js syn-html" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Foundation project</title>
+
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/app_override.css">
+		<!-- build:js js/vendor/modernizr.js -->
+		<script src="bower_components/modernizr/modernizr.js"></script>
+		<!-- endbuild -->
+	</head>
+	<body class="syn-body">
+
+		<div class="syn-app" role="application">
+			<header class="syn-app__header syn-app__header--default syn-app__header--no-transition js-app-header" role="banner">
+				<div class="syn-layout--max-width">
+					<h1 class="syn-branding">
+						<a class="syn-branding__link" href="#">
+							Synposium
+						</a>
+					</h1>
+					<a class="syn-toggle-nav syn-toggle-nav--is-inactive js-trigger-nav" href="#">
+						<span class="syn-toggle-nav__lable">Menu</span>
+						<span class="syn-toggle-nav__icon">
+							<span class="syn-toggle-nav__icon--default fa fa-bars"></span>
+							<span class="syn-toggle-nav__icon--close fa fa-times"></span>
+						</span>
+					</a>
+				</div>
+			</header>
+
+			<nav class="syn-nav syn-nav--is-inactive syn-nav--field-is-inactive js-nav" role="navigation">
+
+				<div class="syn-layout--max-width">
+
+					<form class="syn-search syn-search--is-inactive js-search" role="search">
+
+						<div class="row collapse">
+							<div class="small-10 columns">
+								<input class="syn-search__keywords js-kewords" type="text" placeholder="Search Synposium" />
+							</div>
+							<div class="small-2 columns">
+								<button class="syn-search__button js-clear-keywords">
+									<span class="syn-search__submit-default">
+										<span class="fa fa-search"></span>
+									</span>
+									<span class="syn-search__submit-clear">
+										<span class="fa fa-times"></span>
+									</span>
+								</button>
+							</div>
+						</div>
+
+						<div class="syn-search__filters">
+							<strong class="syn-search__filters__title">Quick Results</strong>
+							<ul class="syn-search__filters__list">
+								<li class="syn-search__filters__list-item"><a href="#">Result</a></li>
+							</ul>
+						</div>
+					</form>
+
+					<ul class="syn-nav-sections">
+						<li class="syn-nav-sections__item">
+							<a class="syn-nav-sections__link" href="#">
+								<span class="label-icon">
+									<span class="label-icon__label">Fn</span>
+								</span>
+								Foundation
+							</a>
+						</li>
+						<li class="syn-nav-sections__item">
+							<a class="syn-nav-sections__link" href="#">
+								<span class="label-icon">
+									<span class="label-icon__label">Bo</span>
+								</span>
+								Bourbon
+							</a>
+						</li>
+						<li class="syn-nav-sections__item">
+							<a class="syn-nav-sections__link" href="#">
+								<span class="label-icon">
+									<span class="label-icon__label">Re</span>
+								</span>
+								React Components
+							</a>
+						</li>
+					</ul>
+
+					<div class="syn-nav-toc">
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-home"></span>
+								</span>
+								Overview
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Front-end Coding Standards</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">File Structure</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Bower</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Grunt</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Syn Mixins</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-th-list"></span>
+								</span>
+								Structural Components
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Media Queries</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Visibility</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Grid</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Block Grid</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Interchange Content</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Thumbnails</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Utility Classes</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">RTL Support</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-compass"></span>
+								</span>
+								Navigation
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Off Canvas</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Top Bar</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Side Nav</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Sub Nav</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Pill Nav</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Breadcrumbs</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Pagination</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-picture-o"></span>
+								</span>
+								Media
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Modals</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Clearing Lightbox</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Flex Video</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-tasks"></span>
+								</span>
+								Forms
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Form Layouts</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Form Elements</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Datepicker</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Timepicker</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Field Validation</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Form Validation</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-link"></span>
+								</span>
+								Buttons
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Buttons</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Button Groups</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Split Buttons</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Dropdown Buttons</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-text-height"></span>
+								</span>
+								Typography
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Type</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Inline Lists</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Labels</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Icon Fonts</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-text-height"></span>
+								</span>
+								Callouts &amp; Prompts
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Alerts</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Panels</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Tooltips</a></li>
+							</ul>
+						</div>
+
+						<div class="syn-nav-toc__section">
+							<h1 class="syn-nav-toc__section__title">
+								<span class="syn-nav-toc__section__title__icon">
+									<span class="fa fa-align-right"></span>
+								</span>
+								Content Types
+							</h1>
+							<ul class="syn-nav-toc__section__list">
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Dropdowns</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Tables</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Pricing Tables</a></li>
+								<li class="syn-nav-toc__section__list-item"><a class="syn-nav-toc__section__list-item-link" href="#">Progress Bars</a></li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+
+			</nav>
+
+			<section class="syn-app__content syn-nav--is-inactive js-content" role="main">
+				<div class="syn-hero">
+					<div class="syn-layout--max-width">
+						<h1 class="syn-hero__title">Kitchen Sink <span class="fa fa-long-arrow-right"></span></h1>
+						<p class="syn-hero__callout">This page includes every single Foundation element so that we can make sure things work together smoothly.</p>
+					</div>
+					<div class="syn-hero__orbs">
+						<div class="syn-hero__orbs-1"></div>
+						<div class="syn-hero__orbs-2"></div>
+						<div class="syn-hero__orbs-3"></div>
+					</div>
+				</div>
+				<div class="syn-breadcrumbs">
+					<div class="syn-layout--max-width">
+						<a class="syn-breadcrumb" href="#">Home</a>
+						<a class="syn-breadcrumb syn-breadcrumb--current" href="#">Kitchen Sink</a>
+					</div>
+				</div>
+				<div class="syn-layout--max-width">
+
+					<h2>Content Elements</h2>
+
+					<h3>Alerts</h3>
+					<div data-alert class="alert-box">
+						This is a standard alert.
+						<a href="#" class="close">&times;</a>
+					</div>
+					<div data-alert class="alert-box success radius">
+						This is a success alert with a radius.
+						<a href="#" class="close">&times;</a>
+					</div>
+
+					<div data-alert class="alert-box warning round">
+						This is a warning alert that is rounded.
+						<a href="#" class="close">&times;</a>
+					</div>
+
+					<div data-alert class="alert-box info radius">
+						This is an info alert with a radius.
+						<a href="#" class="close">&times;</a>
+					</div>
+
+					<h3>Labels</h3>
+					<hr>
+					<div class="row">
+						<div class="large-3 columns">
+							<span class="label">Regular Label</span>
+						</div>
+						<div class="large-3 columns">
+							<span class="radius secondary label">Radius Secondary Label</span>
+						</div>
+						<div class="large-3 columns">
+							<span class="round alert label">Round Alert Label</span>
+						</div>
+						<div class="large-3 columns">
+							<span class="success label">Success Label</span>
+						</div>
+					</div>
+					<hr>
+
+					<h3>Progress Bars</h3>
+					<hr>
+					<div class="progress large-6">
+						<span class="meter" style="width: 40%"></span>
+					</div>
+					<div class="radius progress success large-8">
+						<span class="meter" style="width: 80%"></span>
+					</div>
+					<div class="nice round progress alert large-10">
+						<span class="meter" style="width: 30%"></span>
+					</div>
+					<div class="nice secondary progress">
+						<span class="meter" style="width: 50%"></span>
+					</div>
+					<hr>
+
+					<h3>Tables</h3>
+					<table>
+						<thead>
+							<tr>
+								<th width="200">Table Header</th>
+								<th>Table Header</th>
+								<th width="150">Table Header</th>
+								<th width="150">Table Header</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Content Goes Here</td>
+								<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+								<td>Content Goes Here</td>
+								<td>Content Goes Here</td>
+							</tr>
+							<tr>
+								<td>Content Goes Here</td>
+								<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+								<td>Content Goes Here</td>
+								<td>Content Goes Here</td>
+							</tr>
+							<tr>
+								<td>Content Goes Here</td>
+								<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+								<td>Content Goes Here</td>
+								<td>Content Goes Here</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h3>Panels</h3>
+					<div class="row">
+						<div class="medium-6 columns">
+							<div class="panel">
+								<h5>This is a regular panel.</h5>
+								<p>It has an easy to override visual style, and is appropriately subdued.</p>
+							</div>
+						</div>
+						<div class="medium-6 columns">
+							<div class="panel callout">
+								<h5>This is a callout panel.</h5>
+								<p>It's a little ostentatious, but useful for important content.</p>
+							</div>
+						</div>
+						<div class="columns">
+							<div class="panel callout radius">
+								<h5>This is a callout panel with a radius.</h5>
+								<p>It's a little ostentatious, but useful for important content.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="medium-6 columns">
+							<h3>Buttons</h3>
+							<a href="#" class="button">Default Button</a>
+							<a href="#" class="button large">Large Button</a>
+							<a href="#" class="button small">Small Button</a>
+							<a href="#" class="button tiny">Tiny Button</a>
+							<a href="#" class="button radius">Radius Button</a>
+							<a href="#" class="button alert">Alert Button</a>
+						</div>
+
+						<div class="medium-6 columns">
+							<h3>Button Groups</h3>
+							<ul class="button-group">
+								<li><a href="#" class="button">Button 1</a></li>
+								<li><a href="#" class="button">Button 2</a></li>
+								<li><a href="#" class="button">Button 3</a></li>
+							</ul>
+
+							<ul class="button-group radius">
+								<li><a href="#" class="button secondary">Button 1</a></li>
+								<li><a href="#" class="button secondary">Button 2</a></li>
+								<li><a href="#" class="button secondary">Button 3</a></li>
+							</ul>
+
+							<ul class="button-group round">
+								<li><a href="#" class="button alert">Button 1</a></li>
+								<li><a href="#" class="button alert">Button 2</a></li>
+								<li><a href="#" class="button alert">Button 3</a></li>
+							</ul>
+						</div>
+
+					</div>
+
+					<h3>Button Bars</h3>
+					<div class="button-bar">
+						<ul class="button-group">
+							<li><a href="#" class="button">Button 1</a></li>
+							<li><a href="#" class="button">Button 2</a></li>
+							<li><a href="#" class="button">Button 3</a></li>
+						</ul>
+
+						<ul class="button-group">
+							<li><a href="#" class="button">Button 1</a></li>
+							<li><a href="#" class="button">Button 2</a></li>
+							<li><a href="#" class="button">Button 3</a></li>
+						</ul>
+					</div>
+
+					<div class="button-bar">
+						<ul class="button-group radius">
+							<li><a href="#" class="button secondary">Button 1</a></li>
+							<li><a href="#" class="button secondary">Button 2</a></li>
+							<li><a href="#" class="button secondary">Button 3</a></li>
+						</ul>
+
+						<ul class="button-group radius">
+							<li><a href="#" class="button secondary">Button 1</a></li>
+							<li><a href="#" class="button secondary">Button 2</a></li>
+							<li><a href="#" class="button secondary">Button 3</a></li>
+						</ul>
+					</div>
+
+					<div class="button-bar">
+						<ul class="button-group round">
+							<li><a href="#" class="button secondary">Button 1</a></li>
+							<li><a href="#" class="button secondary">Button 2</a></li>
+							<li><a href="#" class="button secondary">Button 3</a></li>
+						</ul>
+
+						<ul class="button-group round">
+							<li><a href="#" class="button secondary">Button 1</a></li>
+							<li><a href="#" class="button secondary">Button 2</a></li>
+							<li><a href="#" class="button secondary">Button 3</a></li>
+						</ul>
+					</div>
+
+					<div class="row collapse">
+
+						<div class="large-6 columns">
+							<h3>Split Buttons</h3>
+							<a href="#" class="button split">Split Button <span data-dropdown="drop"></span></a><br>
+							<ul id="drop" class="f-dropdown" data-dropdown-content>
+								<li><a href="#">This is a link</a></li>
+								<li><a href="#">This is another</a></li>
+								<li><a href="#">Yet another</a></li>
+							</ul>
+
+							<a href="#" class="button split secondary radius">Split Button <span data-dropdown="drop"></span></a><br>
+							<ul id="drop" class="f-dropdown" data-dropdown-content>
+								<li><a href="#">This is a link</a></li>
+								<li><a href="#">This is another</a></li>
+								<li><a href="#">Yet another</a></li>
+							</ul>
+
+							<a href="#" class="button split alert round">Split Button <span data-dropdown="drop"></span></a><br>
+							<ul id="drop" class="f-dropdown" data-dropdown-content>
+								<li><a href="#">This is a link</a></li>
+								<li><a href="#">This is another</a></li>
+								<li><a href="#">Yet another</a></li>
+							</ul>
+						</div>
+
+						<div class="large-6 columns">
+							<h3>Dropdown Buttons</h3>
+							<a href="#" data-dropdown="drop" class="button dropdown">Dropdown Button</a><br>
+							<ul id="drop" data-dropdown-content class="f-dropdown">
+								<li><a href="#">This is a link</a></li>
+								<li><a href="#">This is another</a></li>
+								<li><a href="#">Yet another</a></li>
+							</ul>
+
+							<a href="#" data-dropdown="drop" class="button dropdown secondary radius">Dropdown Button</a><br>
+							<ul id="drop" data-dropdown-content class="f-dropdown">
+								<li><a href="#">This is a link</a></li>
+								<li><a href="#">This is another</a></li>
+								<li><a href="#">Yet another</a></li>
+							</ul>
+
+							<a href="#" data-dropdown="drop" class="button dropdown alert round">Dropdown Button</a><br>
+							<ul id="drop" data-dropdown-content class="f-dropdown">
+								<li><a href="#">This is a link</a></li>
+								<li><a href="#">This is another</a></li>
+								<li><a href="#">Yet another</a></li>
+							</ul>
+						</div>
+
+					</div>
+
+					<h3>Accordions</h3>
+
+					<dl class="accordion" data-accordion>
+						<dd>
+							<a href="#panel1">Accordion 1</a>
+							<div id="panel1" class="content active">
+							<dl class="tabs" data-tab>
+								<dd class="active"><a href="#panel2-1">Tab 1</a></dd>
+								<dd><a href="#panel3-2">Tab 2</a></dd>
+								<dd><a href="#panel3-3">Tab 3</a></dd>
+								<dd><a href="#panel3-4">Tab 4</a></dd>
+							</dl>
+							<div class="tabs-content">
+								<div class="content active" id="panel3-1">
+									<p>First panel content goes here...</p>
+								</div>
+								<div class="content" id="panel3-2">
+									<p>Second panel content goes here...</p>
+								</div>
+								<div class="content" id="panel3-3">
+									<p>Third panel content goes here...</p>
+								</div>
+									<div class="content" id="panel3-4">
+										<p>Fourth panel content goes here...</p>
+									</div>
+								</div>
+							</div>
+						</dd>
+						<dd>
+							<a href="#panel2">Accordion 2</a>
+							<div id="panel2" class="content">
+							Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 	consequat.
+							</div>
+						</dd>
+						<dd>
+							<a href="#panel3">Accordion 3</a>
+							<div id="panel3" class="content">
+							Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+						</dd>
+					</dl>
+
+					<hr>
+
+					<h3>Tabs</h3>
+					<dl class="tabs" data-tab>
+						<dd class="active"><a href="#panel2-1">Tab 1</a></dd>
+						<dd><a href="#panel2-2">Tab 2</a></dd>
+						<dd><a href="#panel2-3">Tab 3</a></dd>
+						<dd><a href="#panel2-4">Tab 4</a></dd>
+					</dl>
+					<div class="tabs-content">
+						<div class="content active" id="panel2-1">
+							<p>First panel content goes here...</p>
+						</div>
+						<div class="content" id="panel2-2">
+							<p>Second panel content goes here...</p>
+						</div>
+						<div class="content" id="panel2-3">
+							<p>Third panel content goes here...</p>
+						</div>
+						<div class="content" id="panel2-4">
+							<p>Fourth panel content goes here...</p>
+						</div>
+					</div>
+
+					<h2>Navigation</h2>
+
+					<h3>Off Canvas Navigation</h3>
+
+					<div class="off-canvas-wrap">
+						<div class="inner-wrap">
+							<nav class="tab-bar">
+								<section class="left-small">
+									<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+								</section>
+
+								<section class="middle tab-bar-section">
+									<h1 class="title">Foundation</h1>
+								</section>
+
+								<section class="right-small">
+									<a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+								</section>
+							</nav>
+
+							<aside class="left-off-canvas-menu">
+								<ul class="off-canvas-list">
+									<li><label>Foundation</label></li>
+									<li><a href="#">The Psychohistorians</a></li>
+								</ul>
+							</aside>
+
+							<aside class="right-off-canvas-menu">
+								<ul class="off-canvas-list">
+									<li><label>Users</label></li>
+									<li><a href="#">Hari Seldon</a></li>
+								</ul>
+							</aside>
+
+							<section class="main-section">
+								<div class="row panel">
+									<div class="columns">
+										<h4>The Psychohistorians</h4>
+										<p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
+										<p>Using psychohistory, Seldon has discovered the declining nature of the Empire, angering the aristocratic members of the Committee of Public Safety, the de facto rulers of the Empire. The Committee considers Seldon's views and statements treasonous, and he is arrested along with young mathematician Gaal Dornick, who has arrived on Trantor to meet Seldon. Seldon is tried by the Committee and defends his beliefs, explaining his theories and predictions, including his belief that the Empire will collapse in 500 years and enter a 30,000-year dark age, to the Committee's members.</p>
+									</div>
+								</div>
+							</section>
+
+							<a class="exit-off-canvas"></a>
+
+						</div>
+					</div>
+
+					<h3>Top Bar</h3>
+
+					<nav class="top-bar" data-topbar>
+						<ul class="title-area">
+							<li class="name">
+								<h1><a href="#">My Site</a></h1>
+							</li>
+							<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+						</ul>
+
+						<section class="top-bar-section">
+							<!-- Right Nav Section -->
+							<ul class="right">
+								<li class="active"><a href="#">Right Button Active</a></li>
+								<li class="has-dropdown">
+									<a href="#">Right Button with Dropdown</a>
+										<ul class="dropdown">
+											<li><a href="#">First link in dropdown</a></li>
+										</ul>
+								</li>
+							</ul>
+
+							<!-- Left Nav Section -->
+							<ul class="left">
+								<li><a href="#">Left Nav Button</a></li>
+							</ul>
+						</section>
+					</nav>
+
+					<br />
+
+					<nav class="top-bar" data-topbar="">
+						<!-- Title -->
+						<ul class="title-area">
+							<li class="name"><h1><a href="#">Sexy Top Bar</a></h1></li>
+							<!-- Mobile Menu Toggle -->
+							<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+						</ul>
+
+						<!-- Top Bar Section -->
+
+						<section class="top-bar-section">
+
+							<!-- Top Bar Left Nav Elements -->
+							<ul class="left">
+
+								<!-- Search | has-form wrapper -->
+								<li class="has-form">
+									<div class="row collapse">
+										<div class="large-8 small-9 columns">
+											<input type="text" placeholder="Find Stuff">
+										</div>
+										<div class="large-4 small-3 columns">
+											<a href="#" class="alert button expand">Search</a>
+										</div>
+									</div>
+								</li>
+								<li class="has-form">
+									<a class="button">Test</a>
+								</li>
+							</ul>
+
+							<!-- Top Bar Right Nav Elements -->
+							<ul class="right">
+								<!-- Divider -->
+								<li class="divider"></li>
+
+							<!-- Dropdown -->
+								<li class="has-dropdown not-click"><a href="http://zurb.com">Item 1</a>
+									<ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+										<li><label>Level One</label></li>
+										<li><a href="#">Sub-item 1</a></li>
+										<li><a href="#">Sub-item 2</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Sub-item 3</a></li>
+										<li class="has-dropdown not-click"><a href="#">Sub-item 4</a>
+
+										<!-- Nested Dropdown -->
+										<ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+											<li><label>Level Two</label></li>
+											<li><a href="#">Sub-item 2</a></li>
+											<li><a href="#">Sub-item 3</a></li>
+											<li><a href="#">Sub-item 4</a></li>
+										</ul>
+										</li>
+										<li><a href="#">Sub-item 5</a></li>
+									</ul>
+								</li>
+
+								<li class="divider"></li>
+
+								<!-- Anchor -->
+								<li><a href="#">Generic Button</a></li>
+								<li class="divider"></li>
+
+								<!-- Button -->
+								<li class="has-form show-for-large-up">
+									<a href="http://foundation.zurb.com/docs" class="button">Get Lucky</a>
+								</li>
+							</ul>
+						</section>
+					</nav>
+
+					<h3>Sub Nav</h3>
+
+					<dl class="sub-nav">
+						<dt>Filter:</dt>
+						<dd class="active"><a href="#">All</a></dd>
+						<dd><a href="#">Active</a></dd>
+						<dd><a href="#">Pending</a></dd>
+						<dd><a href="#">Suspended</a></dd>
+					</dl>
+
+					<h3>Breadcrumbs</h3>
+
+					<ul class="breadcrumbs">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Features</a></li>
+						<li class="unavailable"><a href="#">Gene Splicing</a></li>
+						<li class="current"><a href="#">Cloning</a></li>
+					</ul>
+
+					<h3>Pagination</h3>
+
+					<ul class="pagination">
+						<li class="arrow unavailable"><a href="">&laquo;</a></li>
+						<li class="current"><a href="">1</a></li>
+						<li><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li class="unavailable"><a href="">&hellip;</a></li>
+						<li><a href="">12</a></li>
+						<li><a href="">13</a></li>
+						<li class="arrow"><a href="">&raquo;</a></li>
+					</ul>
+
+					<h2>Forms</h2>
+
+					<h3>Basic Form</h3>
+					<form>
+						<div class="row">
+							<div class="large-12 columns">
+								<label>Input Label</label>
+								<input type="text" placeholder="large-12.columns" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-4 columns">
+								<label>Input Label</label>
+								<input type="text" placeholder="large-4.columns" />
+							</div>
+							<div class="large-4 columns">
+								<label>Input Label</label>
+								<input type="text" placeholder="large-4.columns" />
+							</div>
+							<div class="large-4 columns">
+								<div class="row collapse">
+									<label>Input Label</label>
+									<div class="small-9 columns">
+										<input type="text" placeholder="small-9.columns" />
+									</div>
+									<div class="small-3 columns">
+										<span class="postfix">.com</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-12 columns">
+								<label>Select Box</label>
+								<select>
+									<option value="husker">Husker</option>
+									<option value="starbuck">Starbuck</option>
+									<option value="hotdog">Hot Dog</option>
+									<option value="apollo">Apollo</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-6 columns">
+								<label>Choose Your Favorite</label>
+								<input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
+								<input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+							</div>
+							<div class="large-6 columns">
+								<label>Check these out</label>
+								<input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+								<input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-12 columns">
+								<label>Textarea Label</label>
+								<textarea placeholder="small-12.columns"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="columns text-right">
+								<button class="button" type="submit">Submit</button>
+							</div>
+						</div>
+					</form>
+
+				</div><!-- /end .syn-layout--max-width -->
+
+			</section>
+
+			<footer class="syn-app__footer" role="contentinfo">
+				<div class="syn-layout--max-width">
+					<h1 class="syn-footer-legal">A product of Synapse Studios</h1>
+				</div>
+			</footer>
+		</div><!-- /end .app -->
+
+		<!-- build:js js/vendor/jquery.min.js -->
+		<script src="bower_components/jquery/jquery.min.js"></script>
+		<!-- endbuild -->
+		<!-- build:js js/foundation/foundation.min.js -->
+		<script src="bower_components/foundation/js/foundation.min.js"></script>
+		<!-- endbuild -->
+		<script src="js/app.js"></script>
+
+	</body>
+</html>

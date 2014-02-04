@@ -1,6 +1,6 @@
 .syn-app__header {
 	height         :  rem-calc(60);
-	position       :  fixed;
+	position       :  absolute;
 	top            :  0;
 	right          :  0;
 	left           :  0;
@@ -9,6 +9,29 @@
 	border-bottom  :  1px solid rgba($white, .25);
 
 	@include clearfix;
+	@include transition( background .3s ease );
+
+	&.syn-app__header--default {
+		background  :  transparent;
+
+		.syn-branding__link,
+		.syn-toggle-nav
+		 {
+			color  :  $white;
+		}
+
+	}
+
+	&.syn-app__header--scroll {
+		background  :  rgba($white, .5);
+
+		.syn-branding__link,
+		.syn-toggle-nav
+		 {
+			color  :  $themeDDGray;
+		}
+	}
+
 }
 
 .syn-branding {
@@ -34,6 +57,7 @@
 
 .syn-branding__link {
 	color  :  $white;
+	@include transition( color .8s ease .5s );
 }
 
 // trigger for main menu
@@ -46,6 +70,8 @@
 	text-transform  :  uppercase;
 	display         :  inline-block;
 	color           :  $white;
+
+	@include transition( color .6s ease );
 
 	&:hover,
 	&:focus {
